@@ -9,9 +9,9 @@ phases:
       - npm install
   build:
     commands:
-      - ng build --configuration production
+      - ng build
 
 artifacts:
   files:
     - '**/*'
-  base-directory: dist/<your-project-name>  # Replace this
+  base-directory: dist\nextgensolutions\browser

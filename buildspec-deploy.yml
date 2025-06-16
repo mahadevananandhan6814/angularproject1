@@ -7,5 +7,6 @@ phases:
   build:
     commands:
       - echo "Deploying to S3..."
+      - ls -lrta
       - aws s3 rm s3://shop.thenextgen.solutions --recursive
-      - aws s3 sync dist/browsers/ s3://shop.thenextgen.solutions
+      - aws s3 sync dist/nextgensolutions/browser/ s3://shop.thenextgen.solutions
