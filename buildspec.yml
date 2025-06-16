@@ -10,8 +10,10 @@ phases:
   build:
     commands:
       - ng build
+      - ls -lrta
+      - pwd
 
 artifacts:
   files:
     - '**/*'
-  base-directory: dist\nextgensolutions\browser
+  base-directory: dist/nextgensolutions/browser
